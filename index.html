@@ -14,6 +14,23 @@
     
     <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgoosegamez34.github.io&label=&icon=github&color=%23198754&message=&style=flat&tz=US%2FMichigan">
  
+<!-- Place this where you want the clock to appear -->
+<div id="clock">Loading...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    // Formats time as HH:MM:SS
+    const timeString = now.toLocaleTimeString(); 
+    document.getElementById('clock').textContent = timeString;
+  }
+
+  // Update the clock every 1 second (1000 milliseconds)
+  setInterval(updateClock, 1000);
+
+  // Initialize the clock immediately
+  updateClock();
+</script>
 
     </body>
 </htmL>
